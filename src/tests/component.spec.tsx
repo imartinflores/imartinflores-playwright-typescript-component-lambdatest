@@ -6,6 +6,7 @@ test.use({ viewport: { width: 500, height: 500 } });
 
 test('Header should work', async ({ mount, page }) => {
   const component = await mount(<Header></Header>);
+  //await expect(page.locator("[qa-id='Header']")).toHaveText("Header Testing Component")
   await expect(page.locator("header>h1")).toHaveScreenshot()
   page.close()
 });
