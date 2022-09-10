@@ -2,7 +2,7 @@
 function Header () {
   return (
     <header>
-       <h1>Header Testing Component</h1>
+       <h1 qa-id="Header">Header Testing Component</h1>
     </header>
   )
 }
