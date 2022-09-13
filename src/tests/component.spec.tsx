@@ -2,7 +2,6 @@ import { test, expect } from '@playwright/experimental-ct-react';
 import Header from '../../src/header';
 import App from '../../src/App';
 
-test.use({ viewport: { width: 500, height: 500 } });
 
 test('Header should work', async ({ mount, page }) => {
   const component = await mount(<Header></Header>);
